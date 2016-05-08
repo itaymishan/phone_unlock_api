@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        #Select1
+        {
+            height: 35px;
+            width: 537px;
+            font-size: large;
+            z-index: 1;
+            left: 299px;
+            top: 25px;
+            position: absolute;
+            background-color: #66FFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <p>
+
+    <select id="Select1" aria-dropeffect="move" name="ID" form="orderForm">
+        <option value="3785">Check</option>
+        <option value="2975">un_at</option>
+        <option value="2930">un_lm</option>
+    </select></p>
+    <p>
+        &nbsp;</p>
+    &nbsp;<form action="place_imei_order.php" method="post" id="orderForm">
+		<p>
+	<input name="IMEI" type="text" style="height: 61px; width: 533px; font-size: xx-large; z-index: 1; left: 294px; top: 91px; position: absolute; background-color: #FF9966;" maxlength="15" /></p>
+		<br />
+        <br />
+    <input type="submit" style="height: 72px; width: 539px; font-size: large; z-index: 1; left: 298px; top: 186px; position: absolute;" />
+	</form>	
+    	<br />
+        <br />
+    
+	<h4>Get Order Status By IMEI</h4>
+	<form action="get_imei_orders_details.php" method="post"> 
+        IMEI: <input name="IMEI" type="text" /> 
+	<input type="submit" />
+	</form>
+	
+	<h4>Insert</h4>
+	<form action="insert_to_mysql.php" method="post"> 
+        ID: <input name="IMEI" type="text" /> 
+	<input type="submit" />
+	</form>
+	
+	<h4>GetStatus</h4>
+	<form action="RetrieveOrderStatus.php" method="post"> 
+        ID: <input name="insertIMEI" type="text" /> 
+	<input type="submit" />
+	</form>
+	
+</body>
+</html>
