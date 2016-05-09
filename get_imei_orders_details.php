@@ -3,10 +3,10 @@
  
 require ('header.php');
 include ('dhrufusionapi.class.php');
-define("REQUESTFORMAT", "JSON"); // we recommend json format (More information http://php.net/manual/en/book.json.php)
+define("REQUESTFORMAT", "JSON");
 define('DHRUFUSION_URL', "url");
 define("USERNAME", "username");
-define("API_ACCESS_KEY", "YFX-CST-A1R-6P6-LUU-4KM-NSI-VQT");
+define("API_ACCESS_KEY", "token");
 $api = new DhruFusion();
 
 // Debug on
