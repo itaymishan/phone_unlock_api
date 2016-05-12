@@ -1,6 +1,5 @@
 <?php
 
-
 if (!extension_loaded('curl'))
 {
     trigger_error('cURL extension not installed', E_USER_ERROR);
