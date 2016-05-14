@@ -6,7 +6,7 @@ include ('dhrufusionapi.class.php');
 define("REQUESTFORMAT", "JSON");
 define('DHRUFUSION_URL', "url");
 define("USERNAME", "username");
-define("API_ACCESS_KEY", "token");
+define("API_ACCESS_KEY", "token"); 
 $api = new DhruFusion();
 
 // Debug on
