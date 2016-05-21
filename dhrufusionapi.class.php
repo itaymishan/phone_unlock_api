@@ -65,14 +65,6 @@ class DhruFusion
                 else
                 {
                     curl_close($crul);
-                    // $response = XMLtoARRAY(trim($response));
-                    //if ($this->debug)
-                    //{
-                    //    echo "<textarea rows='20' cols='200'> ";
-                    //    print_r($response);
-                    //    echo "</textarea>";
-                    //}
-					
 					// if new IMEI Order insert to DB
 					$jsonResponse = json_decode($response, true);
 					if($action == "placeimeiorder")
